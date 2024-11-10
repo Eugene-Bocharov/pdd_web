@@ -1,0 +1,92 @@
+.header {
+  width: 100%;
+  position: relative;
+}
+
+.appBar {
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  background-image: url('../../../static/logoh2.png');
+  background-size: cover;
+  margin-right: 50px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dropdownContainer {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  .arrow {
+    margin-left: -10px; // Adjust spacing if needed
+    width: 10px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg); // Initial arrow pointing direction
+    transition: transform 0.3s ease;
+
+    &.arrowOpen {
+      transform: rotate(225deg); // Rotates 180 degrees when open
+    }
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  border-radius: 15px;
+  min-width: 250px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  animation: dropdownSlide 0.3s ease forwards;
+
+  @keyframes dropdownSlide {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  a {
+    margin: 15px;
+  }
+}
