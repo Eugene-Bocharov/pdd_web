@@ -15,6 +15,12 @@ export default function InterPage() {
     'https://images.unsplash.com/photo-1448630360428-65456885c650?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'https://images.unsplash.com/photo-1505843513577-22bb7d21e455?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'https://images.unsplash.com/photo-1492889971304-ac16ab4a4a5a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://plus.unsplash.com/premium_photo-1689609950112-d66095626efb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1448630360428-65456885c650?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1505843513577-22bb7d21e455?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    // 'https://images.unsplash.com/photo-1492889971304-ac16ab4a4a5a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   ];
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -43,7 +49,7 @@ export default function InterPage() {
       />
       <ProjShow
         title="Interior Renovations"
-        description="Interior Renovations are designed to provide an interactive interface to the community and provides an interface to the community"
+        description="Interior Renovations are designed to provide an interactive interface to the community and provides an interface to the communityInterior Renovations are designed to provide an interactive interface to the community and provides an interface to the communityInterior Renovations are designed to provide an interactive interface to the community and provides an interface to the communityInterior Renovations are designed to provide an interactive interface to the community and provides an interface to the communityInterior Renovations are designed to provide an interactive interface to the community and provides an interface to the communityInterior Renovations are designed to provide an interactive interface to the community and provides an interface to the communityInterior Renovations are designed to provide an interactive interface to the community and provides an interface to the communityInterior Renovations are designed to provide an interactive interface to the community and provides an interface to the communityInterior Renovations are designed to provide an interactive interface to the community and provides an interface to the communityInterior Renovations are designed to provide an interactive interface to the community and provides an interface to the communityInterior Renovations are designed to provide an interactive interface to the community and provides an interface to the community"
         images={images}
       />
       <HalfText

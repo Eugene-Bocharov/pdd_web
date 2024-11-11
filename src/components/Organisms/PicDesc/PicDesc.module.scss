@@ -2,7 +2,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  // padding: 20px;
   width: 80%;
   margin-right: auto;
   margin-left: auto;
@@ -11,6 +10,7 @@
   @media (max-width: 1250px) {
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
   }
 
   &.reversed {
@@ -18,12 +18,37 @@
 
     @media (max-width: 1250px) {
       flex-direction: column-reverse;
+      justify-content: center;
     }
   }
 
   div {
     flex: 1;
     padding: 10px;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+
+  &:hover {
+    background-color: #333;
+  }
+
+  @media (max-width: 1250px) {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; // Ensure it's a block-level element to help with centering
   }
 }
 
@@ -72,30 +97,9 @@ img {
   height: 450px;
   object-fit: cover;
   border-radius: 30px;
-  // flex: 1;
 
   @media (max-width: 768px) {
     width: 100%;
     margin-top: 20px;
-  }
-}
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
-  font-weight: bold;
-  font-size: 16px;
-  border-radius: 20px;
-  text-decoration: none;
-  margin-top: 20px;
-  text-align: center;
-
-  &:hover {
-    background-color: #333;
-  }
-
-  @media (max-width: 1250px) {
-    font-size: 18px;
   }
 }

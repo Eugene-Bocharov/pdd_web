@@ -1,5 +1,4 @@
-import React, { useState, useCallback } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
+import React, { useState } from 'react';
 import styles from './ProjShow.module.scss';
 
 interface ProjShowProps {
@@ -11,7 +10,6 @@ interface ProjShowProps {
 export function ProjShow({ title, description, images }: ProjShowProps) {
   const [isModalOpen, setModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   const openModal = (index: number) => {
     setCurrentIndex(index);
@@ -21,25 +19,6 @@ export function ProjShow({ title, description, images }: ProjShowProps) {
   const closeModal = () => {
     setModalOpen(false);
   };
-
-  const scrollToIndex = useCallback(
-    (index: number) => {
-      if (emblaApi) {
-        emblaApi.scrollTo(index);
-        setCurrentIndex(index);
-      }
-    },
-    [emblaApi]
-  );
-
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setCurrentIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
-
-  React.useEffect(() => {
-    if (emblaApi) emblaApi.on('select', onSelect);
-  }, [emblaApi, onSelect]);
 
   return (
     <div className={styles.projectContainer}>
@@ -62,35 +41,29 @@ export function ProjShow({ title, description, images }: ProjShowProps) {
             className={styles.modalContent}
             onClick={(e) => e.stopPropagation()}
           >
+            <h3 className={styles.modalTitle}>{title}</h3>
             <button onClick={closeModal} className={styles.closeButton}>
               X
             </button>
-
-            {/* Main Image Carousel */}
-            <div className={styles.embla} ref={emblaRef}>
-              <div className={styles.emblaContainer}>
+            <div className={styles.picDivivder}>
+              <div
+                className={styles.largeImageContainer}
+                style={{
+                  backgroundImage: `url(${images[currentIndex]})`,
+                }}
+              ></div>
+              <div className={styles.thumbnailsRow}>
                 {images.map((img, idx) => (
-                  <div className={styles.emblaSlide} key={idx}>
-                    <img src={img} alt="" className={styles.largeImage} />
-                  </div>
+                  <img
+                    key={idx}
+                    src={img}
+                    alt=""
+                    className={`${styles.smallThumbnail} ${idx === currentIndex ? styles.activeThumbnail : ''}`}
+                    onClick={() => setCurrentIndex(idx)}
+                  />
                 ))}
               </div>
             </div>
-
-            {/* Thumbnails Row */}
-            <div className={styles.thumbnailsRow}>
-              {images.map((img, idx) => (
-                <img
-                  key={idx}
-                  src={img}
-                  alt=""
-                  className={`${styles.smallThumbnail} ${idx === currentIndex ? styles.activeThumbnail : ''}`}
-                  onClick={() => scrollToIndex(idx)}
-                />
-              ))}
-            </div>
-
-            <h3 className={styles.modalTitle}>{title}</h3>
             <p className={styles.description}>{description}</p>
           </div>
         </div>
