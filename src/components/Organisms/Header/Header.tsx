@@ -45,7 +45,8 @@ export const Header: React.FC = () => {
                       text="Additions & Remodeling"
                       href="/additions"
                     />
-                    <HeaderLink text="Roofing" href="/roofing" />
+                    <HeaderLink text="New Construction" href="/newconstr" />
+                    <HeaderLink text="Roofing & Other" href="/roofing" />
                   </div>
                 )}
               </div>

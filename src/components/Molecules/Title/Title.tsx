@@ -12,7 +12,7 @@ export const Title: React.FC<TitleProps> = ({ title, link }: TitleProps) => {
       <h2 className={styles.title}>{title}</h2>
       {link && (
         <a href={link} className={styles.seeButton}>
-          Get Appoinment
+          Contact Us
         </a>
       )}
     </div>

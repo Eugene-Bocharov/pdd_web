@@ -13,6 +13,7 @@ import HomAEPage from './pages/ServPages/HomAEPage';
 import InterPage from './pages/ServPages/InterPage';
 import RoofingPage from './pages/ServPages/RoofingPage';
 import TestimonialsPage from './pages/ProjectsPages/TestimonialsPage';
+import NewConstr from './pages/ServPages/NewConstr';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/interior" element={<InterPage />} />
           <Route path="/exterior" element={<ExterPage />} />
           <Route path="/additions" element={<HomAEPage />} />
+          <Route path="/newconstr" element={<NewConstr />} />
           <Route path="/roofing" element={<RoofingPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />

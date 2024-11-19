@@ -24,7 +24,7 @@ export function ContactPage() {
   return (
     <>
       {windowWidth <= 1100 ? <HeaderMob /> : <Header />}
-      <ContactInfo title="Improve your health, beauty, life with us" />
+      <ContactInfo title="Let us bring your vision to life!" />
       <Title title="Lets get in touch !" />
       <ContactForm />
       <Footer />

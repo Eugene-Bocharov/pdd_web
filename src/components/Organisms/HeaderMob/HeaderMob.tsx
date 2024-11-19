@@ -51,8 +51,11 @@ const ServicesDropdown = () => (
     <a href="/additions" className={styles.serviceLink}>
       Additions & Remodeling
     </a>
+    <a href="/newconstr" className={styles.serviceLink}>
+      New Construction
+    </a>
     <a href="/roofing" className={styles.serviceLink}>
-      Roofing
+      Roofing & Other
     </a>
   </div>
 );
@@ -104,7 +107,7 @@ export const HeaderMob = () => {
               />
             </div>
             {isDropdownOpen && <ServicesDropdown />}
-            <HeaderLinkMob text="Appointments" href="/appointments" />
+            <HeaderLinkMob text="Testimonials" href="/testimonials" />
             <HeaderLinkMob text="Contact" href="/contact" />
           </div>
         </div>

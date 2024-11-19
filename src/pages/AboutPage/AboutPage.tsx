@@ -13,6 +13,7 @@ import { DarkText } from '../../components/Organisms/DarkText/DarkText';
 import { TitleDesc } from '../../components/Organisms/TitleDesc/TitleDesc';
 import { Footer } from '../../components/Organisms/Footer/Footer';
 
+import { photos } from '../../static/serviceExp';
 export function AboutPage() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -31,33 +32,33 @@ export function AboutPage() {
     <>
       {windowWidth <= 1100 ? <HeaderMob /> : <Header />}
       <HalfText
-        title="Improve your health, beauty, life with us"
-        description="We are a licensed beauty salon and academy in Edmonton, offering expert waxing and threading services to help clients achieve smooth, flawless skin. Our skilled estheticians specialize in sweet waxing and Brazilian waxing, ensuring a comfortable and efficient experience. We are dedicated to delivering the highest level of care while helping you look and feel your best."
+        title="What do we do?"
+        description="At Project Development And Design Inc., we specialize in comprehensive interior and exterior renovations as well as commercial, residential and new build construction. Our commitment to excellence is reflected in every project we undertake, ensuring that we meet the diverse needs of our clients. With a team of experienced professionals, we focus on delivering high-quality craftsmanship and innovative design solutions tailored to each unique vision."
       />
       <DarkTitleDesk
-        title="Smooth Skin, Expert Care"
-        description="Our licensed beauty salon offers top-quality waxing and threading services. We are dedicated to delivering precise and comfortable treatments tailored to your needs. Whether you’re looking for sweet waxing, Brazilian waxing, or expert threading, our professionals ensure smooth, flawless results. With a focus on client satisfaction, we take pride in providing personalized care that leaves you feeling confident and refreshed."
+        title="Our approach"
+        description="Whether you are looking to renovate your home, build a new commercial space, or enhance the aesthetic appeal of your property, we are dedicated to transforming spaces into functional, beautiful environments. Our approach emphasizes collaboration and communication, ensuring that your ideas and preferences guide the development process."
         link="#"
       />
       <PicDesc
-        title="Who are we ?"
-        description="We are a beauty and health company based in Toronto, Ontario. Our mission is to empower individuals to look and feel their best by offering exceptional services and products. We are committed to providing a personalized and welcoming experience for all of our clients."
+        title="Customer satisfaction"
+        description="At our company, we take great pride in our unwavering commitment to customer satisfaction. From the moment you entrust us with your home renovation project, you can rest assured that our skilled team will stop at nothing to exceed your expectations. Whether you're looking to transform the interior of your living space or revitalize the exterior, we have the expertise and attention to detail to bring your vision to life seamlessly."
         position="normal"
-        pic="https://images.unsplash.com/photo-1581182815808-b6eb627a8798?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        pic={photos.extr[12]}
       />
       <InfoCard
         color="black"
-        title="Custom websites made just for you"
-        description="At HIPL, we understand that a professionally designed and developed website is crucial for your business's success. Our expert team is committed to creating websites that not only look stunning but also perform seamlessly. We meticulously plan and execute each project to ensure your website is fully responsive, user-friendly, and optimized for search engines. "
+        title="Interior renovations"
+        description="Our interior renovations span a wide range of services, from custom cabinetry and elegant flooring to meticulous drywall work and flawless paint finishes. On the exterior side, we excel at everything from roof replacements and siding installations to thoughtful landscaping and stunning deck builds."
       />
       <PicDesc
-        title="Who are we ?"
-        description="We are a beauty and health company based in Toronto, Ontario. Our mission is to empower individuals to look and feel their best by offering exceptional services and products. We are committed to providing a personalized and welcoming experience for all of our clients."
+        title="Commitment to excellence"
+        description="No matter the scope of your project, our seasoned professionals will approach it with the utmost care, ensuring that every step of the process is carried out with precision and efficiency. Customer satisfaction is the cornerstone of our business, and we'll stop at nothing to deliver a renovation experience that leaves you feeling completely fulfilled and proud of your updated home."
         position="reversed"
-        pic="https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Sample image URL
+        pic={photos.extr[4]}
       />
 
-      <Title title="Ready to work with us ?" link="/appointments" />
+      <Title title="Ready to work with us ?" link="/contact" />
       <Footer />
     </>
   );

@@ -15,24 +15,24 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({
         <div className={styles.collumn}>
           <p className={styles.subTitle}>Contact</p>
           <a className={styles.link} href="#">
-            780 709 9979 (text only)
+            403-918-6333
           </a>
           <a className={styles.link} href="#">
-            kazahealthnbeauty@gmail.com
-          </a>
-          <a className={styles.link} href="#">
-            76 Harrow Circle NW, EDMONTON AB T5A 2S5
-          </a>
-          <a className={styles.link} href="/contact#form">
-            Write us
+            info@projectandesign.ca
           </a>
         </div>
         <div className={styles.collumn}>
           <p className={styles.subTitle}>Social Media</p>
-          <a className={styles.link} href="#">
+          <a
+            className={styles.link}
+            href="https://www.instagram.com/projectandesign/profilecard/?igsh=dWRlaHhqNDl6Zmt2"
+          >
             Instagram
           </a>
-          <a className={styles.link} href="#">
+          <a
+            className={styles.link}
+            href="https://www.facebook.com/profile.php?id=61553015094076"
+          >
             Facebook
           </a>
           <a className={styles.link} href="#">

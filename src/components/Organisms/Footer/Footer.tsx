@@ -15,37 +15,34 @@ export const Footer = () => {
           <div className={styles.dividerBox}>
             <div className={styles.collumn}>
               <p className={styles.subTitle}>Services</p>
-              <a className={styles.link} href="/services#massages">
-                Massages
+              <a className={styles.link} href="/interior">
+                Interior Renovations
               </a>
-              <a className={styles.link} href="/services#sweet">
-                Sweet
+              <a className={styles.link} href="/exterior">
+                Exterior Renovations
               </a>
-              <a className={styles.link} href="/services#brazilian">
-                Brazilian
+              <a className={styles.link} href="/additions">
+                Additions & Remodeling
               </a>
-              <a className={styles.link} href="/services#threading">
-                Threading
+              <a className={styles.link} href="/newconstr">
+                New Construction
               </a>
-              <a className={styles.link} href="/services#hot-waxing">
-                Hot Waxing
-              </a>
-              <a className={styles.link} href="/services#skin">
-                Skin
-              </a>
-              <a className={styles.link} href="/services#nails">
-                Nails
-              </a>
-              <a className={styles.link} href="/services#lashes">
-                Lashes
+              <a className={styles.link} href="/roofing">
+                Roofing & Other
               </a>
             </div>
             <div className={styles.collumn}>
               <p className={styles.subTitle}>Social Media</p>
-              <a className={styles.link} href="#">
+              <a
+                className={styles.link}
+                href="https://www.instagram.com/projectandesign/profilecard/?igsh=dWRlaHhqNDl6Zmt2"
+              >
                 Instagram
               </a>
-              <a className={styles.link} href="#">
+              <a
+                className={styles.link}
+                href="https://www.facebook.com/profile.php?id=61553015094076"
+              >
                 Facebook
               </a>
               <a className={styles.link} href="#">
@@ -58,14 +55,10 @@ export const Footer = () => {
             <div className={styles.collumn}>
               <p className={styles.subTitle}>Contact</p>
               <a className={styles.link} href="#">
-                780 709 9979 (text only)
+                403-918-6333
               </a>
               <a className={styles.link} href="#">
-                kazahealthnbeauty@gmail.com
-              </a>
-              <a className={styles.link} href="#">
-                Copyright © 2024 Project Development And Design Inc. - All
-                rights reserved
+                info@projectandesign.ca
               </a>
               <a className={styles.link} href="/contact#form">
                 Write us
@@ -77,7 +70,7 @@ export const Footer = () => {
         <div className={styles.midContainer}>
           <p className={styles.rightT}>
             Copyright © 2024 Project Development And Design Inc. - All rights
-            reserved
+            reserved | Website made by Yevhenii Bocharov
           </p>
         </div>
       </div>

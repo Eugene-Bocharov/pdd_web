@@ -13,6 +13,8 @@ import { DarkTitleDesk } from '../../components/Organisms/DarkTitleDesc/DarkTitl
 import { ServiceDesc } from '../../components/Organisms/ServiceDesc/ServiceDesc';
 import { Footer } from '../../components/Organisms/Footer/Footer';
 
+import { photos } from '../../static/serviceExp';
+
 export function Homepage() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -32,27 +34,27 @@ export function Homepage() {
       {windowWidth <= 1100 ? <HeaderMob /> : <Header />}
       <HomeWelc />
       <TitleDesc
-        title="Who are we ?"
-        description="We are an affordable health and beauty spa in Edmonton Alberta that provides various services that are tailored to your needs."
+        title="About us"
+        description="We are a Construction company based in Calgary, Alberta with over a decade of experience in the industry."
       />
       <PicDesc
-        title="Exceptional Spa Experience"
-        description="Our talented estheticians and massage therapists will make your experience above and beyond expectations."
+        title="Our specialization"
+        description="We specialize in exterior finishings and interior projects. We take pride in tackling challenges head-on, ensuring every project reflects our commitment. "
         position="normal"
-        pic="https://lashfx.ca/cdn/shop/articles/How_Long_Does_It_Take_for_Eyelashes_to_Grow_Back.webp?v=1707514749&width=1100"
+        pic={photos.extr[8]}
       />
       <DarkTitleDesk
-        title="Explore & Book Today"
-        description="Please browse our services pages and book an appointment to try our services and take advantage of our introductory rates."
+        title="Commitment to excellence"
+        description="Our team is passionate about transforming spaces and making your vision into reality. Whether it’s a new exterior project or cozy interior update we are here to help."
         link="#"
       />
       <PicDesc
-        title="Who are we ?"
-        description="We are a beauty and health company based in Toronto, Ontario. Our mission is to empower individuals to look and feel their best by offering exceptional services and products. We are committed to providing a personalized and welcoming experience for all of our clients."
+        title="Let’s build something amazing together!"
+        description=""
         position="reversed"
-        pic="https://pearlishskinclinic.com/wp-content/uploads/2022/02/skin-care-400x400.jpg" // Sample image URL
+        pic={photos.nc[3]}
       />
-      <Title title="Ready to work with us ?" link="/appo" />
+      <Title title="Ready to work with us ?" link="/contact" />
       <Footer />
     </>
   );

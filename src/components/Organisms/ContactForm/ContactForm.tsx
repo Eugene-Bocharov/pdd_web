@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import styles from './ContactForm.module.scss';
 
 interface FormData {
@@ -78,17 +78,13 @@ export const ContactForm: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Handle form submission here, e.g., send data to server
-    console.log(formData);
-    // Reset form fields
-    setFormData(initialFormData);
-  };
-
   return (
     <div className={styles.container} id="form">
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form
+        className={styles.form}
+        action="https://formspree.io/f/xdkozyav"
+        method="POST"
+      >
         <InputField
           label="Name"
           id="name"

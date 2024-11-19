@@ -51,7 +51,7 @@ export const HomeWelc: React.FC = () => {
               how to make a custom solution tailored to your needs.
             </h3>
             <div className={styles.boxDivider}>
-              <a href="/services" className={styles.seeButton}>
+              <a href="/about" className={styles.seeButton}>
                 See more
               </a>
               <a href="/contact" className={styles.contactButton}>
