@@ -107,6 +107,7 @@ export const HeaderMob = () => {
               />
             </div>
             {isDropdownOpen && <ServicesDropdown />}
+            <HeaderLinkMob text="Projects" href="/projects" />
             <HeaderLinkMob text="Testimonials" href="/testimonials" />
             <HeaderLinkMob text="Contact" href="/contact" />
           </div>
