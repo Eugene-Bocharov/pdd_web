@@ -29,7 +29,7 @@ export default function ExterPage() {
         title="Exterior Renovations"
         description="At Project Development and Design Inc, we specialize in exterior renovations tailored to meet your unique needs and preferences. Our team is dedicated to transforming your vision into reality through expertly managed exterior projects. We understand that the exterior of your property is not only a reflection of your style but also an essential aspect of its functionality. With years of experience in the industry, we take pride in delivering high-quality renovations that enhance the beauty and durability of your home or commercial space."
         position="normal"
-        pic={photos.extr[8]}
+        pic={photos.extr[12]}
       />
       <ProjShow
         title="Exterior Renovations"
