@@ -42,7 +42,7 @@ export function Homepage() {
         title="Our specialization"
         description="We specialize in exterior projects. We take pride in tackling challenges head-on, ensuring every project reflects our commitment. "
         position="normal"
-        pic={photos.extr[8]}
+        pic={photos.nc[5]}
       />
       <DarkTitleDesk
         title="Commitment to excellence"

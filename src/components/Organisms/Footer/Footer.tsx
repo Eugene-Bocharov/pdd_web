@@ -15,20 +15,20 @@ export const Footer = () => {
           <div className={styles.dividerBox}>
             <div className={styles.collumn}>
               <p className={styles.subTitle}>Services</p>
-              <a className={styles.link} href="/interior">
+              {/* <a className={styles.link} href="/interior">
                 Interior Renovations
-              </a>
+              </a> */}
               <a className={styles.link} href="/exterior">
-                Exterior Renovations
-              </a>
-              <a className={styles.link} href="/additions">
-                Additions & Remodeling
+                Exterior Finishings
               </a>
               <a className={styles.link} href="/newconstr">
                 New Construction
               </a>
               <a className={styles.link} href="/roofing">
                 Roofing & Other
+              </a>
+              <a className={styles.link} href="/additions">
+                Additions & Remodeling
               </a>
             </div>
             <div className={styles.collumn}>
