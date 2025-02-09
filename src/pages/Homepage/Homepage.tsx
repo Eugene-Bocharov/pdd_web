@@ -14,6 +14,7 @@ import { ServiceDesc } from '../../components/Organisms/ServiceDesc/ServiceDesc'
 import { Footer } from '../../components/Organisms/Footer/Footer';
 
 import { photos } from '../../static/serviceExp';
+import { Partners } from '../../components/Organisms/Partners/Partners';
 
 export function Homepage() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -39,13 +40,13 @@ export function Homepage() {
       />
       <PicDesc
         title="Our specialization"
-        description="We specialize in exterior finishings and interior projects. We take pride in tackling challenges head-on, ensuring every project reflects our commitment. "
+        description="We specialize in exterior projects. We take pride in tackling challenges head-on, ensuring every project reflects our commitment. "
         position="normal"
         pic={photos.extr[8]}
       />
       <DarkTitleDesk
         title="Commitment to excellence"
-        description="Our team is passionate about transforming spaces and making your vision into reality. Whether it’s a new exterior project or cozy interior update we are here to help."
+        description="Our team is passionate about transforming spaces and making your vision into reality. For any new exterior project, we are here to help."
         link="#"
       />
       <PicDesc
@@ -54,6 +55,7 @@ export function Homepage() {
         position="reversed"
         pic={photos.nc[3]}
       />
+      <Partners title="" pic={photos.partner} />
       <Title title="Ready to work with us ?" link="/contact" />
       <Footer />
     </>

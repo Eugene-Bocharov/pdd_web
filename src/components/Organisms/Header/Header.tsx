@@ -39,14 +39,15 @@ export const Header: React.FC = () => {
                 />
                 {showDropdown && (
                   <div className={styles.dropdown}>
-                    <HeaderLink text="Interior Design" href="/interior" />
-                    <HeaderLink text="Exterior Design" href="/exterior" />
+                    {/* <HeaderLink text="Interior Design" href="/interior" /> */}
+                    <HeaderLink text="Exterior Finishings" href="/exterior" />
+
+                    <HeaderLink text="New Construction" href="/newconstr" />
+                    <HeaderLink text="Roofing & Other" href="/roofing" />
                     <HeaderLink
                       text="Additions & Remodeling"
                       href="/additions"
                     />
-                    <HeaderLink text="New Construction" href="/newconstr" />
-                    <HeaderLink text="Roofing & Other" href="/roofing" />
                   </div>
                 )}
               </div>

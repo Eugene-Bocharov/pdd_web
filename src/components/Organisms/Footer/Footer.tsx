@@ -69,7 +69,7 @@ export const Footer = () => {
         <div className={styles.divider}></div>
         <div className={styles.midContainer}>
           <p className={styles.rightT}>
-            Copyright © 2024 Project Development And Design Inc. - All rights
+            Copyright © 2025 Project Development And Design Inc. - All rights
             reserved | Website made by Yevhenii Bocharov
           </p>
         </div>

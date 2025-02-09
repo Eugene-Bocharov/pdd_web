@@ -33,7 +33,7 @@ export function AboutPage() {
       {windowWidth <= 1100 ? <HeaderMob /> : <Header />}
       <HalfText
         title="What do we do?"
-        description="At Project Development And Design Inc., we specialize in comprehensive interior and exterior renovations as well as commercial, residential and new build construction. Our commitment to excellence is reflected in every project we undertake, ensuring that we meet the diverse needs of our clients. With a team of experienced professionals, we focus on delivering high-quality craftsmanship and innovative design solutions tailored to each unique vision."
+        description="At Project Development And Design Inc., we specialize in comprehensive interior renovations as well as commercial, residential and new build construction. Our commitment to excellence is reflected in every project we undertake, ensuring that we meet the diverse needs of our clients. With a team of experienced professionals, we focus on delivering high-quality craftsmanship and innovative design solutions tailored to each unique vision."
       />
       <DarkTitleDesk
         title="Our approach"

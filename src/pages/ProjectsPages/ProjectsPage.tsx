@@ -24,13 +24,13 @@ function ProjectsPage() {
     <>
       {windowWidth <= 1100 ? <HeaderMob /> : <Header />}
       <div style={{ marginTop: '150px' }}>
-        <ProjShow
+        {/* <ProjShow
           title="Interior Renovations Before & After"
           description="Whether you’re looking to update your living space or transform an unfinished basement into functional and stylish extension of your home, our team is up to the challenge. We’ll take the time to understand your aesthetic preferences and develop custom renovation plan that fits your needs. Just tell us your vision and we’ll bring it to life in style!"
           images={photos.intr}
-        />
+        /> */}
         <ProjShow
-          title="Exterior Renovations"
+          title="Exterior Finishings"
           description="At Project Development and Design Inc, we specialize in exterior renovations tailored to meet your unique needs and preferences. Our team is dedicated to transforming your vision into reality through expertly managed exterior projects. We understand that the exterior of your property is not only a reflection of your style but also an essential aspect of its functionality. With years of experience in the industry, we take pride in delivering high-quality renovations that enhance the beauty and durability of your home or commercial space."
           images={photos.extr}
         />

@@ -1,61 +1,33 @@
+const importImages = (
+  prefix: string,
+  count: number,
+  extensions: string[] = ['jpg', 'jpeg', 'png', 'webp']
+) => {
+  const images = [];
+
+  for (let i = 1; i <= count; i++) {
+    for (const ext of extensions) {
+      try {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        images.push(require(`./${prefix}_${i}.${ext}`));
+        break; // If the file is found, stop checking other extensions
+      } catch (error) {
+        // Ignore errors if the file doesn't exist
+      }
+    }
+  }
+
+  return images;
+};
+
+// Adjust counts based on the highest-numbered image you have
 export const photos = {
-  extr: [
-    require('./extr_1.jpg'),
-    require('./extr_2.jpg'),
-    require('./extr_3.jpg'),
-    require('./extr_4.jpg'),
-    require('./extr_5.jpg'),
-    require('./extr_6.jpg'),
-    require('./extr_7.jpeg'),
-    require('./extr_8.jpeg'),
-    require('./extr_9.jpeg'),
-    require('./extr_12.jpg'),
-    require('./extr_13.jpg'),
-    require('./extr_14.jpg'),
-    require('./extr_15.jpg'),
-  ],
-  intr: [
-    require('./intr_4.jpg'),
-    require('./intr_5.jpg'),
-    require('./intr_15.jpg'),
-    require('./intr_14.jpg'),
-    require('./intr_21.jpg'),
-    require('./intr_16.jpeg'),
-    require('./intr_17.jpeg'),
-    require('./intr_18.jpeg'),
-
-    require('./intr_1.jpg'),
-    require('./intr_19.jpeg'),
-    require('./intr_23.jpeg'),
-
-    require('./intr_24.jpg'),
-    require('./intr_2.jpg'),
-
-    require('./intr_8.jpg'),
-    require('./intr_11.jpg'),
-    require('./intr_18.jpg'),
-
-    require('./intr_20.jpeg'),
-    require('./intr_22.jpeg'),
-    require('./intr_22.jpg'),
-  ],
-  hae: [require('./hae_1.jpeg'), require('./hae_2.jpeg')],
-  nc: [
-    require('./nc_1.jpg'),
-    require('./nc_2.jpg'),
-    require('./nc_3.jpg'),
-    require('./nc_4.jpg'),
-  ],
-  rof: [
-    require('./rof_1.jpeg'),
-    require('./rof_2.jpeg'),
-    require('./rof_3.jpg'),
-    require('./rof_4.webp'),
-    require('./rof_5.webp'),
-    require('./rof_6.png'),
-    require('./rof_7.jpg'),
-    require('./rof_8.png'),
-  ],
+  extr: importImages('extr', 50), // Adjust number based on how many images exist
+  intr: importImages('intr', 50),
+  hae: importImages('hae', 50),
+  nc: importImages('nc', 50),
+  partner: importImages('partner', 50),
+  rof: importImages('rof', 50, ['jpg', 'jpeg', 'png', 'webp']), // Includes webp
   main: [require('./main_1.png')],
   logoh: [require('./logoh2.png')],
   logod: [require('./logod3.png')],

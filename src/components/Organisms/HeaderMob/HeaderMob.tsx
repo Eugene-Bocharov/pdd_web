@@ -42,20 +42,20 @@ const HideOnScroll: React.FC<HeaderProps> = ({ children, isMenuOpen }) => {
 
 const ServicesDropdown = () => (
   <div className={styles.dropdownMenu}>
-    <a href="/interior" className={styles.serviceLink}>
+    {/* <a href="/interior" className={styles.serviceLink}>
       Interior Design
-    </a>
+    </a> */}
     <a href="/exterior" className={styles.serviceLink}>
-      Exterior Design
-    </a>
-    <a href="/additions" className={styles.serviceLink}>
-      Additions & Remodeling
+      Exterior Finishings
     </a>
     <a href="/newconstr" className={styles.serviceLink}>
       New Construction
     </a>
     <a href="/roofing" className={styles.serviceLink}>
       Roofing & Other
+    </a>
+    <a href="/additions" className={styles.serviceLink}>
+      Additions & Remodeling
     </a>
   </div>
 );
